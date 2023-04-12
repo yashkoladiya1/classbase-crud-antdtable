@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Table } from "antd";
+import { Table,Button, Space } from "antd";
 
 export default class Home extends Component {
   constructor() {
@@ -33,20 +33,22 @@ export default class Home extends Component {
       render: (record, data, i) => {
         return (
           <>
-            <button
-              type="button"
+          <Space>
+            <Button
+              type="primary"
               onClick={() => this.handleEdit(i)}
               className="btn btn-success mx-2"
             >
               Edit
-            </button>
-            <button
-              type="button"
+            </Button>
+            <Button type="primary"
+              danger
               onClick={() => this.handleDelete(i)}
               className="btn btn-danger mx-2"
             >
               Delete
-            </button>
+            </Button>
+            </Space>
           </>
         );
       },
