@@ -31,7 +31,7 @@ class Usertable extends Component {
     // console.log("id----->",i)
     let newData = this.props.storeData;
     newData.splice(i,1);
-    console.log(newData)
+    // console.log(newData)
     this.props.userDetailsHandler([...newData])
   }
 

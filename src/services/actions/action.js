@@ -10,7 +10,7 @@ export const getUserDetails = (data) =>{
 }
 
 export const getEditDetails = (data)=>{
-    console.log("actiondata--->",data)
+    // console.log("actiondata--->",data)
     return {
         type:GET_EDIT_DETAILS,
         payload:data

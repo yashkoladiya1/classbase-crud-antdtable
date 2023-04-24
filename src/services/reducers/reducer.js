@@ -16,7 +16,7 @@ export default function userItems(state=initialState,action){
             // eslint-disable-next-line
             break;
         case GET_EDIT_DETAILS:
-            console.log("reducer--->",action.payload)
+            // console.log("reducer--->",action.payload)
             return{
                 ...state,
                 editData:action.payload
